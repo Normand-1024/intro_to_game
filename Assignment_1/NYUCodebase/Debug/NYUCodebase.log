@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\henry\documents\github\intro_to_game\assignment_1\nyucodebase\main.cpp(63): warning C4101: 'event': unreferenced local variable
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_1\Debug\NYUCodebase.exe
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_1\Debug\NYUCodebase.pdb (Full PDB)
