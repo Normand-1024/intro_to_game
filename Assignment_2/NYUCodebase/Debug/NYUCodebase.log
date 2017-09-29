@@ -1,0 +1,7 @@
+﻿  main.cpp
+c:\users\henry\documents\github\intro_to_game\assignment_2\nyucodebase\main.cpp(85): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\henry\documents\github\intro_to_game\assignment_2\nyucodebase\main.cpp(86): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\henry\documents\github\intro_to_game\assignment_2\nyucodebase\main.cpp(221): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\henry\documents\github\intro_to_game\assignment_2\nyucodebase\main.cpp(68): warning C4715: 'Collider::ifCollide': not all control paths return a value
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_2\Debug\NYUCodebase.exe
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_2\Debug\NYUCodebase.pdb (Full PDB)
