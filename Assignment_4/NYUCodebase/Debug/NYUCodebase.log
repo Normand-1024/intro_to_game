@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\henry\documents\github\intro_to_game\assignment_4\nyucodebase\main.cpp(39): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\henry\documents\github\intro_to_game\assignment_4\nyucodebase\main.cpp(468): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\henry\documents\github\intro_to_game\assignment_4\nyucodebase\main.cpp(477): warning C4305: '-=': truncation from 'double' to 'float'
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_4\Debug\NYUCodebase.exe
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_4\Debug\NYUCodebase.pdb (Full PDB)
