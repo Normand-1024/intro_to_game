@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\henry\documents\github\intro_to_game\assignment_5\nyucodebase\main.cpp(173): warning C4018: '<': signed/unsigned mismatch
+c:\users\henry\documents\github\intro_to_game\assignment_5\nyucodebase\main.cpp(198): warning C4018: '<': signed/unsigned mismatch
+c:\users\henry\documents\github\intro_to_game\assignment_5\nyucodebase\main.cpp(458): warning C4018: '<': signed/unsigned mismatch
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_5\Debug\NYUCodebase.exe
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_5\Debug\NYUCodebase.pdb (Full PDB)
