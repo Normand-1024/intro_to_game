@@ -1,6 +1,3 @@
-﻿  main.cpp
-c:\users\henry\documents\github\intro_to_game\assignment_3\nyucodebase\main.cpp(172): warning C4018: '<': signed/unsigned mismatch
-c:\users\henry\documents\github\intro_to_game\assignment_3\nyucodebase\main.cpp(197): warning C4018: '<': signed/unsigned mismatch
-c:\users\henry\documents\github\intro_to_game\assignment_3\nyucodebase\main.cpp(440): warning C4018: '<': signed/unsigned mismatch
-  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_3\Debug\NYUCodebase.exe
-  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\Assignment_3\Debug\NYUCodebase.pdb (Full PDB)
+﻿  SetPossibility.cpp
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\FinalProj\Debug\NYUCodebase.exe
+  NYUCodebase.vcxproj -> C:\Users\Henry\Documents\GitHub\intro_to_game\FinalProj\Debug\NYUCodebase.pdb (Full PDB)

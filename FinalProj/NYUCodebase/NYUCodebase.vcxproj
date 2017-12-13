@@ -76,11 +76,24 @@
   <ItemGroup>
     <ClCompile Include="Gameboard.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainGame.cpp" />
     <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="OverMenu.cpp" />
+    <ClCompile Include="SetPossibility.cpp" />
     <ClCompile Include="ShaderProgram.cpp" />
+    <ClCompile Include="GraphicManager.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Gameboard.h" />
+    <ClInclude Include="GraphicManager.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="MainGame.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="OverMenu.h" />
+    <ClInclude Include="Vector3.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="ShaderProgram.h" />
   </ItemGroup>
