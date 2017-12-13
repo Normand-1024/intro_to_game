@@ -4,6 +4,7 @@
 #include "Gameboard.h"
 #include <vector>
 #include <ctime> 
+#include <SDL_mixer.h>
 
 enum GameMode;
 enum PlayerMode;
@@ -34,7 +35,7 @@ public:
 
 	void ProcessInput(SDL_Event& event, const float delta, PlayerMode& playerMode, GameMode& gm);
 
-	void Update(const float delta, const Songs& song, GameMode& gm);
+	void Update(const float delta, const Songs& song, GameMode& gm, Mix_Chunk* g_sound, Mix_Chunk* e_sound, Mix_Chunk* m_sound);
 
 	void Draw(ShaderProgram& program);
 

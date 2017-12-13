@@ -3,7 +3,6 @@
 #include "Menu.h"
 #include "MainGame.h"
 #include "OverMenu.h"
-#include <SDL_mixer.h>
 
 #define PI 3.14159265
 
@@ -38,6 +37,9 @@ int main(int argc, char *argv[])
 		std::cout << "Error:" << Mix_GetError() << std::endl;
 
 	Mix_Music* UNDER = Mix_LoadMUS("UNDER.mp3"), *CIV = Mix_LoadMUS("CIV.mp3"), *INQ = Mix_LoadMUS("INQ.wav");
+	Mix_Chunk* GREY_SOUND = Mix_LoadWAV("grey.wav"), *EXP_SOUND = Mix_LoadWAV("Explode.wav"), *MAT_SOUND = Mix_LoadWAV("Match.wav");
+	Mix_VolumeChunk(MAT_SOUND, 20);
+	Mix_VolumeChunk(GREY_SOUND, 70);
 
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -104,7 +106,7 @@ int main(int argc, char *argv[])
 
 		/*Update*/
 		if (gameMode == GameMode::GAME) {
-			GameScene.Update(delta, song, gameMode);
+			GameScene.Update(delta, song, gameMode, GREY_SOUND, EXP_SOUND, MAT_SOUND);
 
 			if (gameMode == GameMode::OVER || gameMode == GameMode::SUCCESS)
 				Mix_HaltMusic();
@@ -129,6 +131,9 @@ int main(int argc, char *argv[])
 	Mix_FreeMusic(CIV);
 	Mix_FreeMusic(INQ);
 	Mix_FreeMusic(UNDER);
+	Mix_FreeChunk(GREY_SOUND);
+	Mix_FreeChunk(EXP_SOUND);
+	Mix_FreeChunk(MAT_SOUND);
 	SDL_Quit();
 	return 0;
 }

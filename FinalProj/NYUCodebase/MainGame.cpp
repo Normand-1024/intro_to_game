@@ -159,7 +159,7 @@ void MainGame::ProcessInput(SDL_Event& event, const float delta, PlayerMode& pla
 	}
 }
 
-void MainGame::Update(const float delta, const Songs& song, GameMode& gm) {
+void MainGame::Update(const float delta, const Songs& song, GameMode& gm, Mix_Chunk* g_sound, Mix_Chunk* e_sound, Mix_Chunk* m_sound) {
 	SetPossibility(song);
 	timePassed += delta;
 
@@ -181,8 +181,10 @@ void MainGame::Update(const float delta, const Songs& song, GameMode& gm) {
 				insertT = TileType::RED;
 			else if (block[i].tag == OBLUE)
 				insertT = TileType::BLUE;
-			else if (block[i].tag == OGREY)
+			else if (block[i].tag == OGREY) {
 				insertT = TileType::GREY;
+				Mix_PlayChannel(-1, g_sound, 0);
+			}
 
 			if (board.Board.size() > 4)
 				columnNum = (int)((block[i].position.x + 0.375f + 0.75f * 3.0f) / 0.75f);
@@ -193,6 +195,8 @@ void MainGame::Update(const float delta, const Songs& song, GameMode& gm) {
 			score -= scoreChange;
 
 			if (scoreChange > 0) {
+				Mix_PlayChannel(-1, e_sound, 0);
+
 				for (int j = 0; j < 5; j++) {
 					for (Explosion& e : booms) {
 						if (!e.active) {
@@ -212,7 +216,11 @@ void MainGame::Update(const float delta, const Songs& song, GameMode& gm) {
 			block.erase(block.begin() + i);
 	}
 
-	score += board.scoreMatch();
+	int scoreChange = board.scoreMatch();
+	if (scoreChange > 0) {
+		score += scoreChange;
+		Mix_PlayChannel(-1, m_sound, 0);
+	}
 
 	timeSinceDrop += delta;
 	if (timeSinceDrop >= 0.75f / blockDropSpeed) {
